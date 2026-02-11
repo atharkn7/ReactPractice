@@ -9,6 +9,7 @@ body {
     background-color: #282D35;
     color: #ffffff;
     font-family: "Inter", sans-serif;
+    max-width: 86vw;
 }
 
 /* HEADER */
@@ -36,6 +37,11 @@ nav>span {
 /*Main Content*/
 main {
     padding: 60px 30px;
+    /*Image*/
+    background-image: url(./assets/react-logo-half.png);
+    background-repeat: no-repeat;
+    background-position: right 80%;
+    background-size: 200px;
 }
 
 main>h1 {
