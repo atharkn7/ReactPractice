@@ -23,3 +23,19 @@ header>img {
 header>h1 {
     font-size: 1.5rem;
 }
+
+/* ARTICLE STYLING */
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article>img {
+    margin-right: 19px;
+}
+
+a {
+    color: var(--link-color);
+}
