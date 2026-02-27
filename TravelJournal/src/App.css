@@ -5,6 +5,10 @@
     --header-text: #FFFFFF;
 }
 
+a {
+    color: var(--link-color);
+}
+
 /* HEADER STYLING */
 
 header {
@@ -26,16 +30,74 @@ header>h1 {
 
 /* ARTICLE STYLING */
 
+main {
+    margin-top: 3rem;
+}
+
 article {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 36px 40px;
 }
 
-article>img {
-    margin-right: 19px;
+.main-image-container {
+    height: 168px;
+    width: 125px;
+    /* Fixed size container */
+
+    overflow: hidden;
+    /* Hides cropped parts of the image */
+
+    flex-shrink: 0;
+    /* Prevents shrinking coz of flex */
+
+    border-radius: 5px;
+    margin-right: 20px;
 }
 
-a {
-    color: var(--link-color);
+.main-image-container>img {
+    height: 100%;
+    width: 100%;
+    /* Forces image to fill the container */
+
+    object-fit: cover;
+    /* Keeps aspect ratio but crops image if proportions don’t match */
+}
+
+.entry-location {
+    display: flex;
+    align-items: center;
+}
+
+.entry-location>img {
+    width: 7px;
+    margin-right: 4px;
+}
+
+.entry-location>span {
+    font-size: 0.65rem;
+    letter-spacing: 0.17rem;
+    margin-right: 12px;
+}
+
+.entry-location>a {
+    font-size: 0.65rem;
+}
+
+.entry>h1 {
+    font-size: 1.56rem;
+    margin-top: 7px;
+}
+
+.date {
+    font-size: 0.65rem;
+    font-weight: bold;
+    margin-top: 17px;
+}
+
+.text {
+    font-size: 0.65rem;
+    line-height: 150%;
+    margin-top: 9px;
 }
